@@ -1,4 +1,8 @@
-# Orion Library
+local Settings = {
+    JoinTeam = "Pirates"; -- Pirates / Marines
+    Translator = true;   -- true / false
+}
+loadstring(game:HttpGet("https://raw.githubusercontent.com/tlredz/Scripts/refs/heads/main/main.luau"))
 This documentation is for the stable release of Orion Library.
 
 ## Booting the Library
@@ -138,13 +142,13 @@ ColorPicker:Set(Color3.fromRGB(255,255,255))
 ## Creating a Slider
 ```lua
 Tab:AddSlider({
-	Name = "Slider",
+	Name = "Redz Hub",
 	Min = 0,
-	Max = 20,
+	Max = 99999,
 	Default = 5,
 	Color = Color3.fromRGB(255,255,255),
 	Increment = 1,
-	ValueName = "bananas",
+	ValueName = "Redz Hub",
 	Callback = function(Value)
 		print(Value)
 	end    
@@ -214,7 +218,7 @@ Callback = <function> - The function of the textbox.
 ```lua
 Tab:AddBind({
 	Name = "Bind",
-	Default = Enum.KeyCode.E,
+	Default = (no key)/false/
 	Hold = false,
 	Callback = function()
 		print("press")
@@ -231,7 +235,7 @@ Callback = <function> - The function of the bind.
 
 ### Chaning the value of a bind
 ```lua
-Bind:Set(Enum.KeyCode.E)
+Bind:Set(no key)/false
 ```
 
 
